@@ -13,6 +13,7 @@ namespace InternetComputerStore
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes(); // For custom attribute routes 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
