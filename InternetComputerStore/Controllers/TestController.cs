@@ -12,7 +12,7 @@ namespace InternetComputerStore.Controllers
         // GET: Test
         public ActionResult Random()
         {
-            var trying = new Test() { Name = "DeveloperTryer" }; 
+            var trying = new Customer() { UserName = "DeveloperTryer" }; 
             return View(trying);
         }
         public ActionResult Index(int? pageindex, string sortBy)

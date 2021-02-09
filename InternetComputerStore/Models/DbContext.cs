@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
+
 
 namespace InternetComputerStore.Models
 {
-    public class Test
+    public class MyDbContext : DbContext
     {
-        public int ID { get; set; }
-        public string Name { get; set; }
-
+        public MyDbContext()
+        {
+        }
     }
 }
