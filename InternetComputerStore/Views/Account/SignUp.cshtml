@@ -1,0 +1,34 @@
+﻿@model InternetComputerStore.Models.Customer
+
+@{
+    ViewBag.Title = "SignUp";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Sign Up</h2>
+
+@using (Html.BeginForm("Create", "Customers"))
+{
+
+    <div class="form-group">
+        @Html.LabelFor(n => n.UserName)
+        @Html.TextBoxFor(n => n.UserName,
+        new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(n => n.Email)
+        @Html.TextBoxFor(n => n.Email,
+        new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(n => n.PasswordHash)
+        @Html.TextBoxFor(n => n.PasswordHash,
+        new { @class = "form-control" })
+    </div>
+
+    <button type="button" class="btn btn-success">Sign Up</button>
+
+
+}

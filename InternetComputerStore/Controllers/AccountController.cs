@@ -11,9 +11,15 @@ namespace InternetComputerStore.Controllers
     public class AccountController : Controller
     {
         // GET: Account
-        public ActionResult Index()
+        public ActionResult SignUp()
         {
             return View();
         }
+
+        public ActionResult SignIn()
+        {
+            return View();
+        }
+
     }
 }
